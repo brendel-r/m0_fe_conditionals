@@ -12,6 +12,7 @@
   // if it is icy, print "yak traks"
 
 var weather = "sunny"
+weather = "rainy"
 
 if (weather === "sunny") {
   console.log("sunscreen");
@@ -29,6 +30,8 @@ if (weather === "sunny") {
 // to print something other than 'coat'
 
 
+
+
 // ##################
 // Using the numQuarters variable defined below, determine
 // if you have enough money to buy a gumball. A gumball costs
@@ -42,12 +45,19 @@ if (weather === "sunny") {
 // Experiment with manipulating the value held within numQuarters
 // to make sure both conditions can be achieved.
 
-var numQuarters = 0
+var numQuarters = 2
+// numQuarters = 6
+numQuarters = 0
 
-console.log("I have enough money for a gumball");
-console.log("I don't have enough money for a gumball");
 
+// console.log("I have enough money for a gumball");
+// console.log("I don't have enough money for a gumball");
 
+if (numQuarters < 2) {
+  console.log("I don't have enough money for a gumball");
+} else {
+  console.log("I have enough money for a gumball");
+}
 // #####################
 // Using the variables defined below, write code that will tell you
 // if you have the ingredients to make a pizza. A pizza requires 
@@ -65,3 +75,11 @@ console.log("I don't have enough money for a gumball");
 var cupsOfFlour = 1;
 var hasSauce = true;
 
+cupsOfFlour = 4;
+hasSauce = false
+
+if (cupsOfFlour >= 2 && hasSauce === true) {
+  console.log("I can make a pizza!!")
+} else {
+  console.log("I cannot make pizza.")
+}
